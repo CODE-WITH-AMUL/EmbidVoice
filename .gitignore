@@ -1,22 +1,95 @@
-### AL ###
-#Template for AL projects for Dynamics 365 Business Central
-#launch.json folder
-.vscode/
-#Cache folder
-.alcache/
-#Symbols folder
-.alpackages/
-#Snapshots folder
-.snapshots/
-#Testing Output folder
-.output/
-#Extension App-file
-*.app
-#Rapid Application Development File
-rad.json
-#Translation Base-file
-*.g.xlf
-#License-file
-*.flf
-#Test results file
-TestResults.xml
+### AL Projects ###
+# Template for AL projects for Dynamics 365 Business Central
+.vscode/               # VSCode workspace settings
+.alcache/              # Cache folder
+.alpackages/           # Symbols folder
+.snapshots/            # Snapshots folder
+.output/               # Testing Output folder
+*.app                  # Extension App-file
+rad.json               # Rapid Application Development File
+*.g.xlf                # Translation Base-file
+*.flf                  # License-file
+TestResults.xml        # Test results file
+
+### Databases ###
+.DB_Store
+.db.sqlite3
+db.sqlite3
+
+### Pipelines / Cleaning ###
+pipline/
+cleaning/
+DB_Store/
+# Ignore everything inside these directories
+/pipline/
+/cleaning/
+
+### Python & Django ###
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Build and packaging artifacts
+build/
+dist/
+.eggs/
+*.egg-info/
+pip-wheel-metadata/
+
+# Test and coverage outputs
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.mypy_cache/
+.pyre/
+.ruff_cache/
+
+# Django runtime artifacts
+*.log
+db.sqlite3-journal
+*.sqlite3
+media/
+staticfiles/
+static/                  # optional if using project-level static folder
+
+### Node / Frontend ###
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+### IDE / Editor files ###
+.idea/
+*.code-workspace
+*.swp
+*.swo
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
+
+### OS files ###
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+### Notebook checkpoints ###
+.ipynb_checkpoints/
